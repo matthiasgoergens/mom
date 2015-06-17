@@ -83,7 +83,7 @@ def lcm(num_a, num_b):
   :returns:
       Least common multiple.
   """
-  return (num_a * num_b) // gcd(num_a, num_b)
+  return num_a * num_b or (num_a * num_b) // gcd(num_a, num_b)
 
 
 def inverse_mod(num_a, num_b):
